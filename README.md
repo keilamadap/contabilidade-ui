@@ -1,0 +1,69 @@
+# Frontend Challenge – Teste Front-end Júnior
+
+Desenvolvimento de uma aplicação em React utilizando styled-components para a implementação das dobras 3 e 5, mantendo fidelidade ao layout do Figma e aplicando boas práticas de frontend (componentização, responsividade e CSS moderno).
+
+---
+
+## Como rodar o projeto
+
+### Pré-requisitos
+
+- Node.js **18+** (recomendado)
+- npm ou yarn
+
+### Instalação
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+### Rodar o projeto
+
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+A aplicação estará disponível em:
+
+```txt
+http://localhost:5173
+```
+
+---
+
+## Tecnologias utilizadas
+
+- React
+- Styled-components
+- JavaScript (ES6+)
+- HTML5
+- CSS (Flexbox, Grid, Media Queries)
+
+---
+
+## Decisões técnicas
+
+- **Styled-components** para manter estilos encapsulados por componente e facilitar variações por breakpoint.
+- Abordagem **mobile-first**, com ajustes no desktop via media queries.
+- Uso de `<picture>` para imagens diferentes em mobile e desktop, garantindo fidelidade visual e melhor performance.
+- Empilhamento dos cards no desktop feito apenas com **CSS** (`transform` e `z-index`), sem lógica em JavaScript.
+- Algumas cores variam entre mobile e desktop conforme o design, controladas por media queries.
+
+---
+
+## Pontos não especificados no Figma (decisões tomadas)
+
+- Quebras de linha específicas em alguns textos para manter fidelidade visual.
+- Intensidade do overlap entre cards no desktop.
+- Uso de imagens distintas para mobile e desktop para evitar cortes indesejados.
+
+---
+
+## Status
+
+- ✅ Dobra 3 finalizada
+- ⏳ Outras seções em desenvolvimento
