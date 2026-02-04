@@ -3,19 +3,17 @@ import styled from "styled-components";
 export const StyledButton = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
   color: #ffffff;
-
   border: none;
   border-radius: 58px;
   height: 60px;
   width: 328px;
-  padding: 12px 28px;
 
-  font-family: inherit;
   font-size: 18px;
   font-weight: 500;
 
-  line-height: 1;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   transition:
     background-color 0.2s ease,
@@ -36,5 +34,9 @@ export const StyledButton = styled.button`
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+
+  @media (min-width: 1024px) {
+    font-family: ${({ theme }) => theme.fonts.secondary};
   }
 `;
