@@ -1,8 +1,8 @@
 import { Card, Icon, Text } from "./styles";
 
-export const CardFeature = ({ icon, children, bg, iconAlt }) => {
+export const FeatureCard = ({ icon, children, bg, iconAlt }) => {
   return (
-    <Card bg={bg}>
+    <Card $bg={bg}>
       <Icon src={icon} alt={iconAlt} />
 
       <Text>{children}</Text>

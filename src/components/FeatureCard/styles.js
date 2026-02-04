@@ -10,7 +10,7 @@ export const Card = styled.div`
   margin-top: -35px;
   width: 328px;
   height: 211px;
-  background: ${({ bg, theme }) => (bg ? theme.colors[bg] : "#ffffff")};
+  background: ${({ $bg, theme }) => ($bg ? theme.colors[$bg] : "#ffffff")};
 
   &:first-child img {
     margin-top: 35px;
@@ -31,8 +31,7 @@ export const Card = styled.div`
     margin-top: 0px;
     gap: 68px;
     height: 128px;
-    background: ${({ bg, theme }) =>
-      theme.desktopColors?.[bg] ?? theme.colors[bg] ?? "#ffffff"};
+    background: ${({ $bg, theme }) => ($bg ? theme.colors[$bg] : "#ffffff")};
 
     &:first-child img {
       margin-top: 0px;
@@ -41,6 +40,10 @@ export const Card = styled.div`
     &:first-child {
       height: 128px;
       border-radius: 24px;
+    }
+
+    &:last-child {
+      padding-top: 33px;
     }
   }
 `;
@@ -65,6 +68,6 @@ export const Text = styled.p`
   color: ${({ theme }) => theme.colors.text};
 
   @media (min-width: 1024px) {
-    margin-top: -5px;
+    margin-top: -16px;
   }
 `;
