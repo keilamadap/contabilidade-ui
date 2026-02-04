@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Card } from "../../components/Card/styles";
+import { Card } from "../../components/FeatureCard/styles";
 
 export const Wrapper = styled.section`
   padding: 40px 16px;
@@ -9,8 +9,6 @@ export const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    height: 1000px;
   }
 `;
 
