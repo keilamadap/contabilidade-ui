@@ -5,8 +5,10 @@ export const Wrapper = styled.section`
   padding: 40px 16px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    padding-top: 60px
+    padding-top: 60px;
     padding-left: 232px;
+    padding-right: 232px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;

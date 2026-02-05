@@ -39,7 +39,7 @@ const Dobra3 = () => {
       </Content>
 
       <ButtonWrapper>
-        <Button onClick={() => console.log("clicked")}>
+        <Button onClick={() => console.log("#")}>
           Conheça os planos e preços
         </Button>
       </ButtonWrapper>

@@ -58,8 +58,6 @@ const Dobra5 = () => {
           <Carousel
             onTouchStart={(e) => handleStart(e.touches[0].clientX)}
             onTouchEnd={(e) => handleEnd(e.changedTouches[0].clientX)}
-            onMouseDown={(e) => handleStart(e.clientX)}
-            onMouseUp={(e) => handleEnd(e.clientX)}
           >
             <Track
               style={{
@@ -80,10 +78,12 @@ const Dobra5 = () => {
         </CardsArea>
       </DesktopLayout>
       <Arrows>
-        <button onClick={prev} disabled={isFirst}>
+        <button aria-label="Slide anterior" onClick={prev} disabled={isFirst}>
           ‹
         </button>
-        <button onClick={next}>›</button>
+        <button aria-label="Próximo slide" onClick={next}>
+          ›
+        </button>
       </Arrows>
 
       <Dots>

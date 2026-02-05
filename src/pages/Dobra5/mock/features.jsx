@@ -18,4 +18,9 @@ export const FEATURES = [
     icon: piggyBankIcon,
     description: "Quanto maior o volume,\n mais complexa a gestão.",
   },
+  {
+    title: "Quantidade de\nfuncionários",
+    icon: piggyBankIcon,
+    description: "Gestão de pessoas de\n  forma complexa e eficiente.",
+  },
 ];

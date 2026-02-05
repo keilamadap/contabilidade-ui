@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
+  width: 100%;
   min-width: 276px;
   height: 294px;
   background: #ffffff;
@@ -29,7 +30,7 @@ export const Text = styled.p`
 export const Description = styled.p`
   display: none;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     color: #000;
     font-weight: 500;
     display: block;
