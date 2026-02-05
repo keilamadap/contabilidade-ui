@@ -22,7 +22,7 @@ export const Card = styled.div`
     height: 240px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     flex-direction: row;
     align-items: center;
     padding-left: 120px;
@@ -53,7 +53,7 @@ export const Icon = styled.img`
   height: 40px;
   flex-shrink: 0;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 35px;
     height: 35px;
     margin-top: -5px;
@@ -67,7 +67,7 @@ export const Text = styled.p`
   margin-top: 10px;
   color: ${({ theme }) => theme.colors.text};
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     margin-top: -16px;
   }
 `;

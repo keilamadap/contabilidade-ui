@@ -36,7 +36,7 @@ export const StyledButton = styled.button`
     cursor: not-allowed;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     font-family: ${({ theme }) => theme.fonts.secondary};
   }
 `;

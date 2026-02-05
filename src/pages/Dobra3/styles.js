@@ -4,8 +4,9 @@ import { Card } from "../../components/FeatureCard/styles";
 export const Wrapper = styled.section`
   padding: 40px 16px;
 
-  @media (min-width: 1024px) {
-    padding: 60px 232px;
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    padding-top: 60px
+    padding-left: 232px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +23,7 @@ export const Title = styled.h2`
     font-weight: 700;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     font-size: 36px;
     line-height: 1.2;
     margin-bottom: 68px;
@@ -33,7 +34,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     display: grid;
     grid-template-columns: 420px 1fr;
     align-items: stretch;
@@ -48,7 +49,7 @@ export const ImageWrapper = styled.div`
   z-index: 1;
   margin: 0 auto;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 476px;
     z-index: 10;
     height: 552px;
@@ -69,7 +70,7 @@ export const Features = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     align-items: flex-start;
     justify-content: stretch;
     height: 615px;
@@ -105,7 +106,7 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     margin-top: 0px;
   }
 `;
@@ -113,7 +114,7 @@ export const ButtonWrapper = styled.div`
 export const BreakDesktop = styled.br`
   display: none;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     display: block;
   }
 `;
@@ -121,7 +122,7 @@ export const BreakDesktop = styled.br`
 export const BreakMobile = styled.br`
   display: block;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     display: none;
   }
 `;

@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  padding-top: 40px;
   background: ${({ theme }) => theme.colors.background};
 
-  @media (min-width: 1024px) {
-    padding-top: 0px;
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     overflow-x: hidden;
-    min-height: 600px;
-    min-height: 60vh;
   }
 `;
 
 export const DesktopLayout = styled.div`
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     max-width: 1440px;
     margin: 0 auto;
     display: grid;
@@ -30,7 +26,7 @@ export const Title = styled.h2`
   line-height: 32px;
   margin-bottom: 40px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     text-align: start;
     font-size: 36px;
     padding-top: 60px;
@@ -40,7 +36,7 @@ export const Title = styled.h2`
 `;
 
 export const CardsArea = styled.div`
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     padding-top: 75px;
   }
 `;
@@ -50,7 +46,7 @@ export const Carousel = styled.div`
   touch-action: pan-x;
   width: 100%;
 
-  @media (max-width: 1023px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     padding-left: 30px;
   }
 `;
@@ -65,7 +61,7 @@ export const Track = styled.div`
 export const Arrows = styled.div`
   display: none;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     margin-top: 32px;
     display: flex;
     justify-content: center;
@@ -95,7 +91,7 @@ export const Dots = styled.div`
   gap: 16px;
   margin-bottom: 40px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     display: none;
   }
 

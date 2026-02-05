@@ -17,4 +17,10 @@ export const theme = {
     primary: "'Poppins', system-ui, -apple-system, sans-serif",
     secondary: "'Inter', system-ui, -apple-system, sans-serif",
   },
+  breakpoints: {
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+  },
 };
