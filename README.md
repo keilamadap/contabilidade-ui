@@ -54,6 +54,7 @@ http://localhost:5173
 - Algumas cores variam entre mobile e desktop conforme o design, controladas por media queries.
 - A tipografia foi organizada no theme com fontes primary e secondary, permitindo alternância entre mobile e desktop sem acoplamento aos componentes.
 - Breakpoints centralizados no theme, melhorando legibilidade, consistência e escalabilidade da responsividade, evitando valores mágicos espalhados pelos estilos.
+- A navegação por swipe foi restrita ao mobile, enquanto no desktop a interação principal ocorre via botões, conforme padrão de UX esperado.
 
 ---
 
@@ -63,3 +64,6 @@ http://localhost:5173
 - Intensidade do overlap entre cards no desktop.
 - Uso de imagens distintas para mobile e desktop para evitar cortes indesejados.
 - Criação de uma pasta `mock` dentro de cada tela para simular dados vindos de API, facilitando testes, manutenção e garantindo escalabilidade para futuras integrações reais.
+- Na **Dobra 5**, o carousel foi implementado sem bibliotecas externas, utilizando `useState` e `useRef`, com suporte a swipe no mobile e navegação por setas no desktop.
+- Foram aplicados cuidados básicos de acessibilidade, como uso de elementos semânticos (`button`, `section`) e `alt` em imagens informativas.
+- Utilizei `<main>` para envolver o conteúdo principal, garantindo semântica e acessibilidade básica.
