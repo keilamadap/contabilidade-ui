@@ -53,6 +53,7 @@ http://localhost:5173
 - Empilhamento dos cards da **Dobra 3** no desktop feito com **CSS puro** (`transform` e `z-index`), evitando lógica extra em JavaScript.
 - Algumas cores variam entre mobile e desktop conforme o design, controladas por media queries.
 - A tipografia foi organizada no theme com fontes primary e secondary, permitindo alternância entre mobile e desktop sem acoplamento aos componentes.
+- Breakpoints centralizados no theme, melhorando legibilidade, consistência e escalabilidade da responsividade, evitando valores mágicos espalhados pelos estilos.
 
 ---
 
@@ -61,4 +62,4 @@ http://localhost:5173
 - Quebras de linha específicas em alguns textos para manter fidelidade visual.
 - Intensidade do overlap entre cards no desktop.
 - Uso de imagens distintas para mobile e desktop para evitar cortes indesejados.
-- Criação de uma pasta mock dentro de cada tela para simular dados vindos de API, facilitando testes, manutenção e garantindo escalabilidade para futuras integrações reais.
+- Criação de uma pasta `mock` dentro de cada tela para simular dados vindos de API, facilitando testes, manutenção e garantindo escalabilidade para futuras integrações reais.
