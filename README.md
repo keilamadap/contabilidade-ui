@@ -67,3 +67,4 @@ http://localhost:5173
 - Na **Dobra 5**, o carousel foi implementado sem bibliotecas externas, utilizando `useState` e `useRef`, com suporte a swipe no mobile e navegação por setas no desktop.
 - Foram aplicados cuidados básicos de acessibilidade, como uso de elementos semânticos (`button`, `section`) e `alt` em imagens informativas.
 - Utilizei `<main>` para envolver o conteúdo principal, garantindo semântica e acessibilidade básica.
+- Prettier configurado para padronização automática de código.
