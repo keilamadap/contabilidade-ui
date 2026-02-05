@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState } from 'react';
 import {
   Wrapper,
   Title,
@@ -8,9 +8,9 @@ import {
   DesktopLayout,
   CardsArea,
   Arrows,
-} from "./styles";
-import { CarouselCard } from "../../components/CarouselCard/CarouselCard";
-import { FEATURES } from "./mock/features";
+} from './styles';
+import { CarouselCard } from '../../components/CarouselCard/CarouselCard';
+import { FEATURES } from './mock/features';
 
 const CARD_WIDTH = 276;
 const GAP = 24;
@@ -90,7 +90,9 @@ const Dobra5 = () => {
         {FEATURES.map((_, index) => (
           <button
             key={index}
-            className={index === activeIndex ? "active" : ""}
+            aria-label={`Ir para o slide ${index + 1}`}
+            aria-current={index === activeIndex ? 'true' : undefined}
+            className={index === activeIndex ? 'active' : ''}
             onClick={() => setActiveIndex(index)}
           />
         ))}

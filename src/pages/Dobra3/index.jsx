@@ -1,8 +1,8 @@
-import imageDesktop from "../../assets/images/business-woman.png";
-import imageMobile from "../../assets/images/business-woman-mob.png";
-import { FeatureCard } from "../../components/FeatureCard/FeatureCard";
-import { Button } from "../../components/Button/Button";
-import { FEATURES } from "./mock/features";
+import imageDesktop from '../../assets/images/business-woman.png';
+import imageMobile from '../../assets/images/business-woman-mob.png';
+import { FeatureCard } from '../../components/FeatureCard/FeatureCard';
+import { Button } from '../../components/Button/Button';
+import { FEATURES } from './mock/features';
 import {
   Wrapper,
   Title,
@@ -10,7 +10,7 @@ import {
   Features,
   ButtonWrapper,
   ImageWrapper,
-} from "./styles";
+} from './styles';
 
 const Dobra3 = () => {
   return (
@@ -39,7 +39,7 @@ const Dobra3 = () => {
       </Content>
 
       <ButtonWrapper>
-        <Button onClick={() => console.log("#")}>
+        <Button onClick={() => console.log('#')}>
           Conheça os planos e preços
         </Button>
       </ButtonWrapper>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Card = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const Card = styled.div`
   margin-top: -35px;
   width: 328px;
   height: 211px;
-  background: ${({ $bg, theme }) => ($bg ? theme.colors[$bg] : "#ffffff")};
+  background: ${({ $bg, theme }) => ($bg ? theme.colors[$bg] : '#ffffff')};
 
   &:first-child img {
     margin-top: 35px;
@@ -31,7 +31,7 @@ export const Card = styled.div`
     margin-top: 0px;
     gap: 68px;
     height: 128px;
-    background: ${({ $bg, theme }) => ($bg ? theme.colors[$bg] : "#ffffff")};
+    background: ${({ $bg, theme }) => ($bg ? theme.colors[$bg] : '#ffffff')};
 
     &:first-child img {
       margin-top: 0px;

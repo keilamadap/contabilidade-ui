@@ -1,4 +1,4 @@
-import { Card, Icon, Text } from "./styles";
+import { Card, Icon, Text } from './styles';
 
 export const FeatureCard = ({ icon, children, bg, iconAlt }) => {
   return (

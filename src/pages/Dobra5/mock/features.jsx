@@ -1,26 +1,26 @@
-import holdingHandsIcon from "../../../assets/icons/holding-hands.svg";
-import piggyBankIcon from "../../../assets/icons/piggyBank.svg";
-import handHeartIcon from "../../../assets/icons/hand-heart.svg";
+import holdingHandsIcon from '../../../assets/icons/holding-hands.svg';
+import piggyBankIcon from '../../../assets/icons/piggyBank.svg';
+import handHeartIcon from '../../../assets/icons/hand-heart.svg';
 
 export const FEATURES = [
   {
-    title: "Regime\ntributário",
+    title: 'Regime\ntributário',
     icon: holdingHandsIcon,
-    description: "Simples Nacional, Lucro\n Presumido ou Lucro Real.",
+    description: 'Simples Nacional, Lucro\n Presumido ou Lucro Real.',
   },
   {
-    title: "CNAE/\natividade",
+    title: 'CNAE/\natividade',
     icon: handHeartIcon,
-    description: "Algumas atividades exigem\n mais obrigações\n acessórias.",
+    description: 'Algumas atividades exigem\n mais obrigações\n acessórias.',
   },
   {
-    title: "Faturamento\nanual",
+    title: 'Faturamento\nanual',
     icon: piggyBankIcon,
-    description: "Quanto maior o volume,\n mais complexa a gestão.",
+    description: 'Quanto maior o volume,\n mais complexa a gestão.',
   },
   {
-    title: "Quantidade de\nfuncionários",
+    title: 'Quantidade de\nfuncionários',
     icon: piggyBankIcon,
-    description: "Gestão de pessoas de\n  forma complexa e eficiente.",
+    description: 'Gestão de pessoas de\n  forma complexa e eficiente.',
   },
 ];

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Card } from "../../components/FeatureCard/styles";
+import styled from 'styled-components';
+import { Card } from '../../components/FeatureCard/styles';
 
 export const Wrapper = styled.section`
   padding: 40px 16px;

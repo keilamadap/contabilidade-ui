@@ -1,4 +1,4 @@
-import { Card, Icon, Text, Description } from "./styles";
+import { Card, Icon, Text, Description } from './styles';
 
 export const CarouselCard = ({ title, icon, iconAlt, description }) => {
   return (
@@ -8,7 +8,7 @@ export const CarouselCard = ({ title, icon, iconAlt, description }) => {
       </Icon>
 
       <Text>
-        {title.split("\n").map((line, i) => (
+        {title.split('\n').map((line, i) => (
           <span key={i}>
             {line}
             <br />
@@ -18,7 +18,7 @@ export const CarouselCard = ({ title, icon, iconAlt, description }) => {
 
       {description && (
         <Description>
-          {description.split("\n").map((line, i) => (
+          {description.split('\n').map((line, i) => (
             <span key={i}>
               {line}
               <br />

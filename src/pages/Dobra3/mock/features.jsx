@@ -1,9 +1,9 @@
-import moneyIcon from "../../../assets/icons/money.svg";
-import invoiceIcon from "../../../assets/icons/invoice.svg";
-import supportIcon from "../../../assets/icons/support.svg";
-import computerIcon from "../../../assets/icons/computer.svg";
-import certificationIcon from "../../../assets/icons/certification.svg";
-import { BreakDesktop, BreakMobile } from "../styles";
+import moneyIcon from '../../../assets/icons/money.svg';
+import invoiceIcon from '../../../assets/icons/invoice.svg';
+import supportIcon from '../../../assets/icons/support.svg';
+import computerIcon from '../../../assets/icons/computer.svg';
+import certificationIcon from '../../../assets/icons/certification.svg';
+import { BreakDesktop, BreakMobile } from '../styles';
 
 export const FEATURES = [
   {
@@ -17,7 +17,7 @@ export const FEATURES = [
   },
   {
     icon: certificationIcon,
-    bg: "lightGrey",
+    bg: 'lightGrey',
     content: (
       <>
         Certificado digital incluso <br /> no 1º ano.
@@ -26,7 +26,7 @@ export const FEATURES = [
   },
   {
     icon: invoiceIcon,
-    bg: "grey",
+    bg: 'grey',
     content: (
       <>
         Emissor de notas
@@ -36,7 +36,7 @@ export const FEATURES = [
   },
   {
     icon: computerIcon,
-    bg: "lightGreen",
+    bg: 'lightGreen',
     content: (
       <>
         Plataforma contábil online com fluxo <BreakDesktop /> de caixa,
@@ -47,8 +47,8 @@ export const FEATURES = [
   },
   {
     icon: supportIcon,
-    iconAlt: "Atendimento personalizado",
-    bg: "green",
+    iconAlt: 'Atendimento personalizado',
+    bg: 'green',
     content: (
       <>
         Atendimento personalizado <BreakDesktop />
